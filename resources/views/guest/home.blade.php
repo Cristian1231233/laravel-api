@@ -9,7 +9,12 @@
 </head>
 <body>
     
+    <div id="app">
         <h1>Home</h1>
+    </div>
 
+
+    
+        <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

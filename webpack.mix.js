@@ -12,9 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/admin.js', 'public/js')
-    .js('resources/js/ghest.js', 'public/js')
+    .js('resources/js/guest.js', 'public/js')
     .sass('resources/sass/admin/style.scss', 'public/css/admin')
-    .sass('resources/sass/ghest/style.scss', 'public/css/ghest')
+    .sass('resources/sass/guest/style.scss', 'public/css/guest')
     .options({
         processCssUrl: false
     });

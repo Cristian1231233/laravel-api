@@ -1,6 +1,12 @@
 <template>
   <article>
       <h1><a href="#">{{post.title}}</a></h1>
+      <div v-if="post.category">{{ post.category.name }}</div>
+      <div class="category">  
+        <span v-for="tag in post.tags"
+        :key="tag.id"
+        > {{ tag.name }}</span>
+      </div>
       <p class="data">{{formatDate}}</p>
       <p class="testo">{{troncateText}}</p>
   </article>
@@ -51,6 +57,18 @@ article{
   }
   .testo{
     padding: 5px 0;
+  }
+  .category{
+    margin: 5px 0;
+    color: white;
+    span{
+      margin-right: 10px;
+      display: inline-block;
+      font-size: 15px;
+      background-color: aqua;
+      padding: 3px 10px;
+      border-radius: 10px;
+    }
   }
 }
 

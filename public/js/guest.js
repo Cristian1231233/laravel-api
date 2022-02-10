@@ -2077,6 +2077,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PostItem',
   props: {
@@ -2169,7 +2175,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "article[data-v-49c43f95] {\n  margin-bottom: 20px;\n}\narticle a[data-v-49c43f95] {\n  font-size: 16px;\n  color: black;\n  text-decoration: none;\n}\narticle a[data-v-49c43f95]:hover {\n  color: violet;\n  text-decoration: underline;\n}\narticle .data[data-v-49c43f95] {\n  font-size: 12px;\n  font-style: italic;\n}\narticle .testo[data-v-49c43f95] {\n  padding: 5px 0;\n}", ""]);
+exports.push([module.i, "article[data-v-49c43f95] {\n  margin-bottom: 20px;\n}\narticle a[data-v-49c43f95] {\n  font-size: 16px;\n  color: black;\n  text-decoration: none;\n}\narticle a[data-v-49c43f95]:hover {\n  color: violet;\n  text-decoration: underline;\n}\narticle .data[data-v-49c43f95] {\n  font-size: 12px;\n  font-style: italic;\n}\narticle .testo[data-v-49c43f95] {\n  padding: 5px 0;\n}\narticle .category[data-v-49c43f95] {\n  margin: 5px 0;\n  color: white;\n}\narticle .category span[data-v-49c43f95] {\n  margin-right: 10px;\n  display: inline-block;\n  font-size: 15px;\n  background-color: aqua;\n  padding: 3px 10px;\n  border-radius: 10px;\n}", ""]);
 
 // exports
 
@@ -3564,6 +3570,19 @@ var render = function () {
     _c("h1", [
       _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.post.title))]),
     ]),
+    _vm._v(" "),
+    _vm.post.category
+      ? _c("div", [_vm._v(_vm._s(_vm.post.category.name))])
+      : _vm._e(),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "category" },
+      _vm._l(_vm.post.tags, function (tag) {
+        return _c("span", { key: tag.id }, [_vm._v(" " + _vm._s(tag.name))])
+      }),
+      0
+    ),
     _vm._v(" "),
     _c("p", { staticClass: "data" }, [_vm._v(_vm._s(_vm.formatDate))]),
     _vm._v(" "),

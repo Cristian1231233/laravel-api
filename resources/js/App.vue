@@ -2,7 +2,7 @@
   
     <div>
         <Header />
-        <h1>Home</h1>
+        <Posts />
         <Footer />
     </div>
 
@@ -12,12 +12,14 @@
 
 import Header from './components/partials/Header';
 import Footer from './components/partials/Footer';
+import Posts from './components/Posts';
 
 export default {
     name: "App",
     components: {
         Header,
-        Footer
+        Footer,
+        Posts
     }
 }
 </script>
